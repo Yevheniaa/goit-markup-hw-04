@@ -44,6 +44,9 @@ img {
 /* -------------------HEder-------------- */
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
+  background: #fff;
 }
 .header-nav {
   display: flex;
@@ -80,7 +83,7 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: color: #404bbf;
   padding: 24px 0;
   display: block;
   transition-property: color;
@@ -102,7 +105,7 @@ img {
 }
 .cover::after {
   box-sizing: border-box;
-  content: " ";
+  content:"";
 
   border-radius: 2px;
   width: 48px;
@@ -148,6 +151,7 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  max-width: 1440px;
 }
 .hero-title {
   font-weight: 700;
@@ -197,7 +201,7 @@ img {
   height: 1px;
   margin: -1px;
   border: 0;
-  padding: 0;
+  padding:  0;
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -314,6 +318,8 @@ img {
 }
 .icon-icon {
   fill: white;
+  width: 16px;
+  height: 16px;
 }
 
 /* ---------------PORTFOLIO------------- */
@@ -394,12 +400,13 @@ img {
 }
 .section-footer .container {
   display: flex;
+  align-items: baseline;
 
-  gap: 120px;
 }
 .footer-wrap-logo {
   width: 264px;
   height: 112px;
+  margin-right: 120px;
 }
 .footer-logo {
   font-family: "Raleway", sans-serif;
@@ -426,7 +433,6 @@ img {
 .footer-cos-text {
   font-weight: 500;
   margin-bottom: 16px;
-
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
@@ -434,14 +440,13 @@ img {
 
 .footer-icon-list {
   display: flex;
-
-  gap: 8px;
+  gap: 16px;
 }
+
 .footer-icon-item {
   width: 40px;
   height: 40px;
-  fill: #fff;
-  border-radius: 50%;
+   border-radius: 50%;
   background-color: #4d5ae5;
   display: flex;
   align-items: center;
@@ -450,8 +455,14 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .footer-icon-item:hover {
   background-color: #31d0aa;
 }
+.footer-icon-link {
+   
+}
 .footer-icon-icon {
+  
+ fill: #fff;
 }
