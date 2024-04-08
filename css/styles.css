@@ -83,7 +83,7 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: color: #404bbf;
+  color: #404bbf;
   padding: 24px 0;
   display: block;
   transition-property: color;
@@ -105,7 +105,7 @@ img {
 }
 .cover::after {
   box-sizing: border-box;
-  content:"";
+  content: "";
 
   border-radius: 2px;
   width: 48px;
@@ -113,7 +113,7 @@ img {
   background-color: #404bbf;
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -1;
 }
 
 .header-contacts {
@@ -201,7 +201,7 @@ img {
   height: 1px;
   margin: -1px;
   border: 0;
-  padding:  0;
+  padding: 0;
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -401,7 +401,6 @@ img {
 .section-footer .container {
   display: flex;
   align-items: baseline;
-
 }
 .footer-wrap-logo {
   width: 264px;
@@ -446,26 +445,22 @@ img {
 .footer-icon-item {
   width: 40px;
   height: 40px;
- 
-  
-  
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-icon-link:hover, .footer-icon-link:focus {
+.footer-icon-link:hover,
+.footer-icon-link:focus {
   background-color: #31d0aa;
 }
 .footer-icon-link {
   width: 100%;
   height: 100%;
-   background-color: #4d5ae5;
-   display: flex;
+  background-color: #4d5ae5;
+  display: flex;
   align-items: center;
   justify-content: center;
-   border-radius: 50%;
+  border-radius: 50%;
 }
 .footer-icon-icon {
-   fill: #fff;
+  fill: #f4f4fd;
 }
